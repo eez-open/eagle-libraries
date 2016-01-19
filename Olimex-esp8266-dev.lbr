@@ -198,28 +198,107 @@
 <wire x1="28.067" y1="1.3335" x2="28.067" y2="0" width="0.254" layer="21"/>
 <wire x1="28.067" y1="25.527" x2="28.067" y2="24.1935" width="0.254" layer="21"/>
 <wire x1="0" y1="25.527" x2="28.067" y2="25.527" width="0.254" layer="21"/>
-<text x="0.6985" y="20.3835" size="1.016" layer="21" ratio="10" rot="R270">GPIO4</text>
-<text x="3.2385" y="20.3835" size="1.016" layer="21" ratio="10" rot="R270">GPIO0</text>
-<text x="5.7785" y="20.3835" size="1.016" layer="21" ratio="10" rot="R270">GPIO2</text>
-<text x="8.3185" y="20.3835" size="1.016" layer="21" ratio="10" rot="R270">GPIO15</text>
-<text x="10.8585" y="20.3835" size="1.016" layer="21" ratio="10" rot="R270">GPIO13</text>
-<text x="13.3985" y="20.3835" size="1.016" layer="21" ratio="10" rot="R270">GPIO14</text>
-<text x="15.9385" y="20.3835" size="1.016" layer="21" ratio="10" rot="R270">GPIO12</text>
-<text x="18.4785" y="20.3835" size="1.016" layer="21" ratio="10" rot="R270">GPIO16</text>
-<text x="21.0185" y="20.3835" size="1.016" layer="21" ratio="10" rot="R270">CHIP_E</text>
-<text x="23.5585" y="20.3835" size="1.016" layer="21" ratio="10" rot="R270">RSTB</text>
-<text x="26.0985" y="20.3835" size="1.016" layer="21" ratio="10" rot="R270">ADC</text>
-<text x="1.9685" y="5.1435" size="1.016" layer="21" ratio="10" rot="R90">3.3V</text>
-<text x="4.5085" y="5.1435" size="1.016" layer="21" ratio="10" rot="R90">GND</text>
-<text x="7.0485" y="5.1435" size="1.016" layer="21" ratio="10" rot="R90">GPIO1</text>
-<text x="9.5885" y="5.1435" size="1.016" layer="21" ratio="10" rot="R90">GPIO3</text>
-<text x="12.1285" y="5.1435" size="1.016" layer="21" ratio="10" rot="R90">SD_CLK</text>
-<text x="14.6685" y="5.1435" size="1.016" layer="21" ratio="10" rot="R90">SD_D2</text>
-<text x="17.2085" y="5.1435" size="1.016" layer="21" ratio="10" rot="R90">SD_D1</text>
-<text x="19.7485" y="5.1435" size="1.016" layer="21" ratio="10" rot="R90">SD_CMD</text>
-<text x="22.2885" y="5.1435" size="1.016" layer="21" ratio="10" rot="R90">SD_D0</text>
-<text x="24.8285" y="5.1435" size="1.016" layer="21" ratio="10" rot="R90">SD_D3</text>
-<text x="27.3685" y="5.1435" size="1.016" layer="21" ratio="10" rot="R90">GPIO5</text>
+<text x="0.6985" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO4</text>
+<text x="3.2385" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO0</text>
+<text x="5.7785" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO2</text>
+<text x="8.3185" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO15</text>
+<text x="10.8585" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO13</text>
+<text x="13.3985" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO14</text>
+<text x="15.9385" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO12</text>
+<text x="18.4785" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO16</text>
+<text x="21.0185" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">CHIP_E</text>
+<text x="23.5585" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">RSTB</text>
+<text x="26.0985" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">ADC</text>
+<text x="1.9685" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">3.3V</text>
+<text x="4.5085" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">GND</text>
+<text x="7.0485" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">GPIO1</text>
+<text x="9.5885" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">GPIO3</text>
+<text x="12.1285" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">SD_CLK</text>
+<text x="14.6685" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">SD_D2</text>
+<text x="17.2085" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">SD_D1</text>
+<text x="19.7485" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">SD_CMD</text>
+<text x="22.2885" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">SD_D0</text>
+<text x="24.8285" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">SD_D3</text>
+<text x="27.3685" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">GPIO5</text>
+</package>
+<package name="MOD-WIFI-ESP8266-DEV_SMT">
+<wire x1="33.0835" y1="24.1935" x2="33.0835" y2="1.3335" width="0.254" layer="21"/>
+<wire x1="0" y1="25.527" x2="0" y2="0" width="0.254" layer="21"/>
+<text x="0.0635" y="26.0985" size="1.6764" layer="25" ratio="10">&gt;NAME</text>
+<text x="14.0335" y="26.0985" size="1.6764" layer="27" ratio="10">&gt;VALUE</text>
+<pad name="GPIO4" x="1.3335" y="21.6535" drill="1.1" shape="offset" rot="R90"/>
+<pad name="GPIO0" x="3.8735" y="21.6535" drill="1.1" shape="offset" rot="R90"/>
+<pad name="GPIO2" x="6.4135" y="21.6535" drill="1.1" shape="offset" rot="R90"/>
+<pad name="GPIO15" x="8.9535" y="21.6535" drill="1.1" shape="offset" rot="R90"/>
+<pad name="GPIO13" x="11.4935" y="21.6535" drill="1.1" shape="offset" rot="R90"/>
+<pad name="GPIO14" x="14.0335" y="21.6535" drill="1.1" shape="offset" rot="R90"/>
+<pad name="GPIO12" x="16.5735" y="21.6535" drill="1.1" shape="offset" rot="R90"/>
+<pad name="GPIO16" x="19.1135" y="21.6535" drill="1.1" shape="offset" rot="R90"/>
+<pad name="CHIP_E" x="21.6535" y="21.6535" drill="1.1" shape="offset" rot="R90"/>
+<pad name="RSTB" x="24.1935" y="21.6535" drill="1.1" shape="offset" rot="R90"/>
+<pad name="ADC" x="26.7335" y="21.6535" drill="1.1" shape="offset" rot="R90"/>
+<wire x1="28.067" y1="24.1935" x2="33.0835" y2="24.1935" width="0.254" layer="21"/>
+<wire x1="28.067" y1="1.3335" x2="33.0835" y2="1.3335" width="0.254" layer="21"/>
+<rectangle x1="28.0035" y1="0.0635" x2="34.3535" y2="25.4635" layer="43"/>
+<pad name="GPIO5" x="26.7335" y="3.8735" drill="1.1" shape="offset" rot="R270"/>
+<pad name="SD_D3" x="24.1935" y="3.8735" drill="1.1" shape="offset" rot="R270"/>
+<pad name="SD_D0" x="21.6535" y="3.8735" drill="1.1" shape="offset" rot="R270"/>
+<pad name="SD_CMD" x="19.1135" y="3.8735" drill="1.1" shape="offset" rot="R270"/>
+<pad name="SD_D1" x="16.5735" y="3.8735" drill="1.1" shape="offset" rot="R270"/>
+<pad name="SD_D2" x="14.0335" y="3.8735" drill="1.1" shape="offset" rot="R270"/>
+<pad name="SD_CLK" x="11.4935" y="3.8735" drill="1.1" shape="offset" rot="R270"/>
+<pad name="GPIO3" x="8.9535" y="3.8735" drill="1.1" shape="offset" rot="R270"/>
+<pad name="GPIO1" x="6.4135" y="3.8735" drill="1.1" shape="offset" rot="R270"/>
+<pad name="GND" x="3.8735" y="3.8735" drill="1.1" shape="offset" rot="R270"/>
+<pad name="3.3V" x="1.3335" y="3.8735" drill="1.1" shape="offset" rot="R270"/>
+<wire x1="0" y1="0" x2="28.067" y2="0" width="0.254" layer="21"/>
+<wire x1="28.067" y1="1.3335" x2="28.067" y2="0" width="0.254" layer="21"/>
+<wire x1="28.067" y1="25.527" x2="28.067" y2="24.1935" width="0.254" layer="21"/>
+<wire x1="0" y1="25.527" x2="28.067" y2="25.527" width="0.254" layer="21"/>
+<text x="0.6985" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO4</text>
+<text x="3.2385" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO0</text>
+<text x="5.7785" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO2</text>
+<text x="8.3185" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO15</text>
+<text x="10.8585" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO13</text>
+<text x="13.3985" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO14</text>
+<text x="15.9385" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO12</text>
+<text x="18.4785" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">GPIO16</text>
+<text x="21.0185" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">CHIP_E</text>
+<text x="23.5585" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">RSTB</text>
+<text x="26.0985" y="20.3835" size="1.016" layer="51" ratio="10" rot="R270">ADC</text>
+<text x="1.9685" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">3.3V</text>
+<text x="4.5085" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">GND</text>
+<text x="7.0485" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">GPIO1</text>
+<text x="9.5885" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">GPIO3</text>
+<text x="12.1285" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">SD_CLK</text>
+<text x="14.6685" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">SD_D2</text>
+<text x="17.2085" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">SD_D1</text>
+<text x="19.7485" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">SD_CMD</text>
+<text x="22.2885" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">SD_D0</text>
+<text x="24.8285" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">SD_D3</text>
+<text x="27.3685" y="5.1435" size="1.016" layer="51" ratio="10" rot="R90">GPIO5</text>
+<smd name="3.3V.1" x="1.3335" y="1.397" dx="1.651" dy="2.032" layer="1"/>
+<smd name="GND.1" x="3.8735" y="1.397" dx="1.651" dy="2.032" layer="1"/>
+<smd name="GPIO1.1" x="6.4135" y="1.397" dx="1.651" dy="2.032" layer="1"/>
+<smd name="GPIO3.1" x="8.9535" y="1.397" dx="1.651" dy="2.032" layer="1"/>
+<smd name="SD_CLK.1" x="11.4935" y="1.397" dx="1.651" dy="2.032" layer="1"/>
+<smd name="SD_D2.1" x="14.0335" y="1.397" dx="1.651" dy="2.032" layer="1"/>
+<smd name="SD_D1.1" x="16.5735" y="1.397" dx="1.651" dy="2.032" layer="1"/>
+<smd name="SD_CMD.1" x="19.1135" y="1.397" dx="1.651" dy="2.032" layer="1"/>
+<smd name="SD_D0.1" x="21.6535" y="1.397" dx="1.651" dy="2.032" layer="1"/>
+<smd name="SD_D3.1" x="24.1935" y="1.397" dx="1.651" dy="2.032" layer="1"/>
+<smd name="GPIO5.1" x="26.7335" y="1.397" dx="1.651" dy="2.032" layer="1"/>
+<smd name="GPIO4.1" x="1.3335" y="24.1935" dx="1.651" dy="2.032" layer="1"/>
+<smd name="GPIO0.1" x="3.8735" y="24.1935" dx="1.651" dy="2.032" layer="1"/>
+<smd name="GPIO2.1" x="6.4135" y="24.1935" dx="1.651" dy="2.032" layer="1"/>
+<smd name="GPIO15.1" x="8.9535" y="24.1935" dx="1.651" dy="2.032" layer="1"/>
+<smd name="GPIO13.1" x="11.4935" y="24.1935" dx="1.651" dy="2.032" layer="1"/>
+<smd name="GPIO14.1" x="14.0335" y="24.1935" dx="1.651" dy="2.032" layer="1"/>
+<smd name="GPIO12.1" x="16.5735" y="24.1935" dx="1.651" dy="2.032" layer="1"/>
+<smd name="GPIO16.1" x="19.1135" y="24.1935" dx="1.651" dy="2.032" layer="1"/>
+<smd name="CHIP_E.1" x="21.6535" y="24.1935" dx="1.651" dy="2.032" layer="1"/>
+<smd name="RSTB.1" x="24.1935" y="24.1935" dx="1.651" dy="2.032" layer="1"/>
+<smd name="ADC.1" x="26.7335" y="24.1935" dx="1.651" dy="2.032" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -292,6 +371,35 @@
 <attribute name="MOUSER" value="909-WIFI-ESP8266-DEV " constant="no"/>
 <attribute name="TME" value="MOD-WIFI-ESP8266-DEV" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="SMT" package="MOD-WIFI-ESP8266-DEV_SMT">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V 3.3V.1"/>
+<connect gate="G$1" pin="ADC" pad="ADC ADC.1"/>
+<connect gate="G$1" pin="CHIP_E" pad="CHIP_E CHIP_E.1"/>
+<connect gate="G$1" pin="GND" pad="GND GND.1"/>
+<connect gate="G$1" pin="GPIO0" pad="GPIO0 GPIO0.1"/>
+<connect gate="G$1" pin="GPIO1" pad="GPIO1 GPIO1.1"/>
+<connect gate="G$1" pin="GPIO12" pad="GPIO12 GPIO12.1"/>
+<connect gate="G$1" pin="GPIO13" pad="GPIO13 GPIO13.1"/>
+<connect gate="G$1" pin="GPIO14" pad="GPIO14 GPIO14.1"/>
+<connect gate="G$1" pin="GPIO15" pad="GPIO15 GPIO15.1"/>
+<connect gate="G$1" pin="GPIO16" pad="GPIO16 GPIO16.1"/>
+<connect gate="G$1" pin="GPIO2" pad="GPIO2 GPIO2.1"/>
+<connect gate="G$1" pin="GPIO3" pad="GPIO3 GPIO3.1"/>
+<connect gate="G$1" pin="GPIO4" pad="GPIO4 GPIO4.1"/>
+<connect gate="G$1" pin="GPIO5" pad="GPIO5 GPIO5.1"/>
+<connect gate="G$1" pin="RSTB" pad="RSTB RSTB.1"/>
+<connect gate="G$1" pin="SD_CLK" pad="SD_CLK SD_CLK.1"/>
+<connect gate="G$1" pin="SD_CMD" pad="SD_CMD SD_CMD.1"/>
+<connect gate="G$1" pin="SD_D0" pad="SD_D0 SD_D0.1"/>
+<connect gate="G$1" pin="SD_D1" pad="SD_D1 SD_D1.1"/>
+<connect gate="G$1" pin="SD_D2" pad="SD_D2 SD_D2.1"/>
+<connect gate="G$1" pin="SD_D3" pad="SD_D3 SD_D3.1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -99,6 +100,7 @@
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="no"/>
 <layer number="151" name="HeatSink" color="14" fill="1" visible="no" active="no"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
@@ -134,6 +136,9 @@
 <layer number="226" name="226bmp" color="27" fill="1" visible="no" active="yes"/>
 <layer number="227" name="227bmp" color="28" fill="1" visible="no" active="yes"/>
 <layer number="228" name="228bmp" color="29" fill="1" visible="no" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="no" active="no"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
@@ -202,29 +207,52 @@
 <wire x1="56.5" y1="1" x2="53.5" y2="-2" width="0.3048" layer="51" curve="-90"/>
 <wire x1="-8.3" y1="88.9" x2="-5.3" y2="91.9" width="0.3048" layer="51" curve="-90"/>
 <wire x1="53.5" y1="91.9" x2="56.5" y2="88.9" width="0.3048" layer="51" curve="-90"/>
-<dimension x1="-5.5" y1="3.4" x2="53.5" y2="4.5" x3="24" y3="-7.73" layer="47" dtype="horizontal"/>
-<dimension x1="-8.5" y1="9.9" x2="56.5" y2="6" x3="24" y3="-13.19" layer="47" dtype="horizontal"/>
-<dimension x1="-8.7" y1="92" x2="2.7" y2="-2" x3="-27.7" y3="45" layer="47" dtype="vertical"/>
-<dimension x1="-15.7" y1="0" x2="-21" y2="-2" x3="-12.38" y3="-1" layer="47" dtype="vertical"/>
-<wire x1="-5" y1="86" x2="53" y2="86" width="0.3048" layer="51"/>
+<dimension x1="-5.5" y1="3.4" x2="53.5" y2="4.5" x3="24" y3="-7.73" textsize="3.5" layer="47" dtype="horizontal"/>
+<dimension x1="-8.5" y1="9.9" x2="56.5" y2="6" x3="24" y3="-13.19" textsize="3.5" layer="47" dtype="horizontal"/>
+<dimension x1="-8.7" y1="92" x2="2.7" y2="-2" x3="-27.7" y3="45" textsize="3.5" layer="47" dtype="vertical"/>
+<dimension x1="-15.7" y1="0" x2="-21" y2="-2" x3="-12.38" y3="-1" textsize="3.5" layer="47" dtype="vertical"/>
+<wire x1="-1.5" y1="86" x2="49.5" y2="86" width="0.3048" layer="51"/>
 <wire x1="53" y1="86" x2="53" y2="6" width="0.3048" layer="51"/>
 <wire x1="53" y1="6" x2="-5" y2="6" width="0.3048" layer="51"/>
 <wire x1="-5" y1="6" x2="-5" y2="86" width="0.3048" layer="51"/>
-<dimension x1="-4.7" y1="6" x2="-28" y2="-2" x3="-17.38" y3="2" layer="47" dtype="vertical"/>
-<dimension x1="-8" y1="96.9" x2="-5" y2="83" x3="-6.5" y3="95" layer="47" dtype="horizontal"/>
-<dimension x1="53" y1="80.9" x2="56" y2="93" x3="54.5" y3="94.73" layer="47" dtype="horizontal"/>
-<dimension x1="-18.7" y1="92" x2="-6" y2="86" x3="-15.65" y3="89" layer="47" dtype="vertical"/>
+<dimension x1="-4.7" y1="6" x2="-28" y2="-2" x3="-17.38" y3="2" textsize="3.5" layer="47" dtype="vertical"/>
+<dimension x1="-8" y1="96.9" x2="-5" y2="83" x3="-6.5" y3="95" textsize="3.5" layer="47" dtype="horizontal"/>
+<dimension x1="53" y1="80.9" x2="56" y2="93" x3="54.5" y3="94.73" textsize="3.5" layer="47" dtype="horizontal"/>
+<dimension x1="-18.7" y1="92" x2="-6" y2="86" x3="-15.65" y3="89" textsize="3.5" layer="47" dtype="vertical"/>
 <hole x="-5.5" y="4" drill="3.2"/>
 <hole x="53.5" y="4" drill="3.2"/>
-<dimension x1="0.8" y1="4" x2="1" y2="0" x3="-3.5" y3="2" layer="47" dtype="vertical"/>
+<dimension x1="0.8" y1="4" x2="1" y2="0" x3="-3.5" y3="2" textsize="3.5" layer="47" dtype="vertical"/>
 <hole x="-5.5" y="89" drill="3.2"/>
 <hole x="53.5" y="89" drill="3.2"/>
-<dimension x1="-3.7" y1="89" x2="-9.3" y2="4" x3="-21.92" y3="46.5" layer="47" dtype="vertical"/>
+<dimension x1="-3.7" y1="89" x2="-9.3" y2="4" x3="-21.92" y3="46.5" textsize="3.5" layer="47" dtype="vertical"/>
 <text x="-1.5875" y="0.635" size="1.27" layer="21" ratio="10" rot="R180">1</text>
 <text x="-1.5875" y="2.8575" size="1.27" layer="21" ratio="10" rot="R180">21</text>
 <text x="49.8475" y="-0.635" size="1.27" layer="21" ratio="10">20</text>
 <text x="49.8475" y="1.905" size="1.27" layer="21" ratio="10">40</text>
-<text x="-0.635" y="48.5775" size="2.1844" layer="51" font="vector" ratio="10">TFT 3.2" 320x240 front side</text>
+<wire x1="-5" y1="86" x2="-1.5" y2="86" width="0.3048" layer="51"/>
+<wire x1="-1.5" y1="86" x2="49.5" y2="86" width="0.3048" layer="51"/>
+<wire x1="49.5" y1="86" x2="53" y2="86" width="0.3048" layer="51"/>
+<text x="2" y="88" size="1.9304" layer="51" font="vector" ratio="10">TFT 3.2" 320x240 top side</text>
+<wire x1="-1.5" y1="82" x2="-1.5" y2="15" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="15" x2="-1.5" y2="6" width="0.1" layer="51" style="shortdash"/>
+<wire x1="49.5" y1="82" x2="49.5" y2="15" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="82" x2="49.5" y2="82" width="0.1" layer="51"/>
+<wire x1="49.5" y1="82" x2="53" y2="82" width="0.1" layer="51" style="shortdash"/>
+<wire x1="49.5" y1="82" x2="49.5" y2="86" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-1.5" y1="82" x2="-1.5" y2="86" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-1.5" y1="15" x2="49.5" y2="15" width="0.1" layer="51"/>
+<wire x1="49.5" y1="15" x2="49.5" y2="6" width="0.1" layer="51" style="shortdash"/>
+<wire x1="49.5" y1="15" x2="53" y2="15" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-5" y1="15" x2="-1.5" y2="15" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-5" y1="82" x2="-1.5" y2="82" width="0.1" layer="51" style="shortdash"/>
+<text x="0.5" y="17" size="1.27" layer="51" font="vector">Display area</text>
+<wire x1="14" y1="17.5" x2="15" y2="17.5" width="0.127" layer="51"/>
+<wire x1="15" y1="17.5" x2="17" y2="15.5" width="0.127" layer="51"/>
+<polygon width="0.127" layer="51">
+<vertex x="17" y="15.5"/>
+<vertex x="16.7" y="16.3"/>
+<vertex x="16.2" y="15.8"/>
+</polygon>
 </package>
 <package name="LCD_TFT_320QVT_MIRROR">
 <pad name="20" x="0" y="0" drill="0.8" rot="R90"/>
@@ -286,7 +314,9 @@
 <wire x1="56.5" y1="1" x2="53.5" y2="-2" width="0.3048" layer="51" curve="-90"/>
 <wire x1="-8.3" y1="88.9" x2="-5.3" y2="91.9" width="0.3048" layer="51" curve="-90"/>
 <wire x1="53.5" y1="91.9" x2="56.5" y2="88.9" width="0.3048" layer="51" curve="-90"/>
-<wire x1="-5" y1="86" x2="53" y2="86" width="0.3048" layer="51"/>
+<wire x1="-5" y1="86" x2="-1.5" y2="86" width="0.3048" layer="51"/>
+<wire x1="-1.5" y1="86" x2="49.5" y2="86" width="0.3048" layer="51"/>
+<wire x1="49.5" y1="86" x2="53" y2="86" width="0.3048" layer="51"/>
 <wire x1="53" y1="86" x2="53" y2="6" width="0.3048" layer="51"/>
 <wire x1="53" y1="6" x2="-5" y2="6" width="0.3048" layer="51"/>
 <wire x1="-5" y1="6" x2="-5" y2="86" width="0.3048" layer="51"/>
@@ -294,11 +324,123 @@
 <hole x="53.5" y="4" drill="3.2"/>
 <hole x="-5.5" y="89" drill="3.2"/>
 <hole x="53.5" y="89" drill="3.2"/>
-<text x="0" y="49.53" size="2.1844" layer="51" font="vector" ratio="10">TFT 3.2" 320x240 back side</text>
+<text x="2" y="88" size="1.9304" layer="51" font="vector" ratio="10">TFT 3.2" 320x240 back side</text>
 <text x="49.911" y="-0.635" size="1.27" layer="21" font="vector" ratio="10">1</text>
 <text x="49.911" y="1.905" size="1.27" layer="21" font="vector" ratio="10">21</text>
 <text x="-1.3335" y="3.175" size="1.27" layer="21" font="vector" ratio="10" rot="R180">40</text>
 <text x="-1.3335" y="0.635" size="1.27" layer="21" font="vector" ratio="10" rot="R180">20</text>
+<wire x1="-1.5" y1="82" x2="-1.5" y2="15" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="15" x2="-1.5" y2="6" width="0.1" layer="51" style="shortdash"/>
+<wire x1="49.5" y1="82" x2="49.5" y2="15" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="82" x2="49.5" y2="82" width="0.1" layer="51"/>
+<wire x1="49.5" y1="82" x2="53" y2="82" width="0.1" layer="51" style="shortdash"/>
+<wire x1="49.5" y1="82" x2="49.5" y2="86" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-1.5" y1="82" x2="-1.5" y2="86" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-1.5" y1="15" x2="49.5" y2="15" width="0.1" layer="51"/>
+<wire x1="49.5" y1="15" x2="49.5" y2="6" width="0.1" layer="51" style="shortdash"/>
+<wire x1="49.5" y1="15" x2="53" y2="15" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-5" y1="15" x2="-1.5" y2="15" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-5" y1="82" x2="-1.5" y2="82" width="0.1" layer="51" style="shortdash"/>
+<text x="0.5" y="17" size="1.27" layer="51" font="vector">Display area</text>
+<wire x1="14" y1="17.5" x2="15" y2="17.5" width="0.127" layer="51"/>
+<wire x1="15" y1="17.5" x2="17" y2="15.5" width="0.127" layer="51"/>
+<polygon width="0.127" layer="51">
+<vertex x="17" y="15.5"/>
+<vertex x="16.7" y="16.3"/>
+<vertex x="16.2" y="15.8"/>
+</polygon>
+<dimension x1="-9.5" y1="89" x2="-10" y2="4" x3="-12" y3="46.5" textsize="3.5" layer="47" dtype="vertical"/>
+</package>
+<package name="LCD_TFT_9341_MIRROR">
+<pad name="20" x="0" y="0" drill="0.8" rot="R90"/>
+<pad name="19" x="2.54" y="0" drill="0.8" rot="R90"/>
+<pad name="18" x="5.08" y="0" drill="0.8" rot="R90"/>
+<pad name="17" x="7.62" y="0" drill="0.8" rot="R90"/>
+<pad name="16" x="10.16" y="0" drill="0.8" rot="R90"/>
+<pad name="15" x="12.7" y="0" drill="0.8" rot="R90"/>
+<pad name="14" x="15.24" y="0" drill="0.8" rot="R90"/>
+<pad name="13" x="17.78" y="0" drill="0.8" rot="R90"/>
+<pad name="12" x="20.32" y="0" drill="0.8" rot="R90"/>
+<pad name="11" x="22.86" y="0" drill="0.8" rot="R90"/>
+<pad name="10" x="25.4" y="0" drill="0.8" rot="R90"/>
+<pad name="9" x="27.94" y="0" drill="0.8" rot="R90"/>
+<pad name="8" x="30.48" y="0" drill="0.8" rot="R90"/>
+<pad name="7" x="33.02" y="0" drill="0.8" rot="R90"/>
+<pad name="6" x="35.56" y="0" drill="0.8" rot="R90"/>
+<pad name="5" x="38.1" y="0" drill="0.8" rot="R90"/>
+<pad name="4" x="40.64" y="0" drill="0.8" rot="R90"/>
+<pad name="3" x="43.18" y="0" drill="0.8" rot="R90"/>
+<pad name="2" x="45.72" y="0" drill="0.8" rot="R90"/>
+<pad name="1" x="48.26" y="0" drill="0.8" shape="square" rot="R90"/>
+<pad name="21" x="48.26" y="2.54" drill="0.8" rot="R90"/>
+<pad name="22" x="45.72" y="2.54" drill="0.8" rot="R90"/>
+<pad name="23" x="43.18" y="2.54" drill="0.8" rot="R90"/>
+<pad name="24" x="40.64" y="2.54" drill="0.8" rot="R90"/>
+<pad name="25" x="38.1" y="2.54" drill="0.8" rot="R90"/>
+<pad name="26" x="35.56" y="2.54" drill="0.8" rot="R90"/>
+<pad name="27" x="33.02" y="2.54" drill="0.8" rot="R90"/>
+<pad name="28" x="30.48" y="2.54" drill="0.8" rot="R90"/>
+<pad name="29" x="27.94" y="2.54" drill="0.8" rot="R90"/>
+<pad name="30" x="25.4" y="2.54" drill="0.8" rot="R90"/>
+<pad name="31" x="22.86" y="2.54" drill="0.8" rot="R90"/>
+<pad name="32" x="20.32" y="2.54" drill="0.8" rot="R90"/>
+<pad name="33" x="17.78" y="2.54" drill="0.8" rot="R90"/>
+<pad name="34" x="15.24" y="2.54" drill="0.8" rot="R90"/>
+<pad name="35" x="12.7" y="2.54" drill="0.8" rot="R90"/>
+<pad name="36" x="10.16" y="2.54" drill="0.8" rot="R90"/>
+<pad name="37" x="7.62" y="2.54" drill="0.8" rot="R90"/>
+<pad name="38" x="5.08" y="2.54" drill="0.8" rot="R90"/>
+<pad name="39" x="2.54" y="2.54" drill="0.8" rot="R90"/>
+<pad name="40" x="0" y="2.54" drill="0.8" rot="R90"/>
+<text x="19.685" y="4.7625" size="2.1844" layer="26" ratio="10" rot="SMR0">&gt;NAME</text>
+<text x="17.78" y="52.0225" size="2.1844" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="56.5" y1="1" x2="56.5" y2="88.9" width="0.3048" layer="51"/>
+<wire x1="53.5" y1="91.9" x2="-5.3" y2="91.9" width="0.3048" layer="51"/>
+<wire x1="-8.3" y1="1" x2="-8.3" y2="88.9" width="0.3048" layer="51"/>
+<wire x1="53.3" y1="-2" x2="-5.3" y2="-2" width="0.3048" layer="51"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="3.81" width="0.1524" layer="22"/>
+<wire x1="-1.27" y1="3.81" x2="49.53" y2="3.81" width="0.1524" layer="22"/>
+<wire x1="49.53" y1="3.81" x2="49.53" y2="-1.27" width="0.1524" layer="22"/>
+<wire x1="49.53" y1="-1.27" x2="-1.27" y2="-1.27" width="0.1524" layer="22"/>
+<wire x1="-5.3" y1="-2" x2="-8.3" y2="1" width="0.3048" layer="51" curve="-90"/>
+<wire x1="56.5" y1="1" x2="53.5" y2="-2" width="0.3048" layer="51" curve="-90"/>
+<wire x1="-8.3" y1="88.9" x2="-5.3" y2="91.9" width="0.3048" layer="51" curve="-90"/>
+<wire x1="53.5" y1="91.9" x2="56.5" y2="88.9" width="0.3048" layer="51" curve="-90"/>
+<wire x1="-5" y1="86" x2="-1.5" y2="86" width="0.3048" layer="51"/>
+<wire x1="-1.5" y1="86" x2="49.5" y2="86" width="0.3048" layer="51"/>
+<wire x1="49.5" y1="86" x2="53" y2="86" width="0.3048" layer="51"/>
+<wire x1="53" y1="86" x2="53" y2="6" width="0.3048" layer="51"/>
+<wire x1="53" y1="6" x2="-5" y2="6" width="0.3048" layer="51"/>
+<wire x1="-5" y1="6" x2="-5" y2="86" width="0.3048" layer="51"/>
+<hole x="-5.5" y="4" drill="3.2"/>
+<hole x="53.5" y="4" drill="3.2"/>
+<hole x="-5.5" y="89.5" drill="3.2"/>
+<hole x="53.5" y="89.5" drill="3.2"/>
+<text x="2" y="88" size="1.9304" layer="51" font="vector" ratio="10">TFT 3.2" 320x240 back side</text>
+<text x="49.5935" y="-0.635" size="1.27" layer="22" font="vector" ratio="10" rot="MR0" align="bottom-right">1</text>
+<text x="49.5935" y="1.905" size="1.27" layer="22" font="vector" ratio="10" rot="MR0" align="bottom-right">21</text>
+<text x="-1.651" y="3.175" size="1.27" layer="22" font="vector" ratio="10" rot="MR180" align="bottom-right">40</text>
+<text x="-1.651" y="0.635" size="1.27" layer="22" font="vector" ratio="10" rot="MR180" align="bottom-right">20</text>
+<wire x1="-1.5" y1="81" x2="-1.5" y2="14" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="14" x2="-1.5" y2="6" width="0.1" layer="51" style="shortdash"/>
+<wire x1="49.5" y1="81" x2="49.5" y2="14" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="81" x2="49.5" y2="81" width="0.1" layer="51"/>
+<wire x1="49.5" y1="81" x2="53" y2="81" width="0.1" layer="51" style="shortdash"/>
+<wire x1="49.5" y1="81" x2="49.5" y2="86" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-1.5" y1="81" x2="-1.5" y2="86" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-1.5" y1="14" x2="49.5" y2="14" width="0.1" layer="51"/>
+<wire x1="49.5" y1="14" x2="49.5" y2="6" width="0.1" layer="51" style="shortdash"/>
+<wire x1="49.5" y1="14" x2="53" y2="14" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-5" y1="14" x2="-1.5" y2="14" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-5" y1="81" x2="-1.5" y2="81" width="0.1" layer="51" style="shortdash"/>
+<text x="0.5" y="16" size="1.27" layer="51" font="vector">Display area</text>
+<wire x1="14" y1="16.5" x2="15" y2="16.5" width="0.127" layer="51"/>
+<wire x1="15" y1="16.5" x2="17" y2="14.5" width="0.127" layer="51"/>
+<polygon width="0.127" layer="51">
+<vertex x="17" y="14.5"/>
+<vertex x="16.7" y="15.3"/>
+<vertex x="16.2" y="14.8"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -447,6 +589,53 @@
 </technologies>
 </device>
 <device name="MIRROR" package="LCD_TFT_320QVT_MIRROR">
+<connects>
+<connect gate="A" pin="CS" pad="15"/>
+<connect gate="A" pin="DB0" pad="21"/>
+<connect gate="A" pin="DB1" pad="22"/>
+<connect gate="A" pin="DB10" pad="9"/>
+<connect gate="A" pin="DB11" pad="10"/>
+<connect gate="A" pin="DB12" pad="11"/>
+<connect gate="A" pin="DB13" pad="12"/>
+<connect gate="A" pin="DB14" pad="13"/>
+<connect gate="A" pin="DB15" pad="14"/>
+<connect gate="A" pin="DB2" pad="23"/>
+<connect gate="A" pin="DB3" pad="24"/>
+<connect gate="A" pin="DB4" pad="25"/>
+<connect gate="A" pin="DB5" pad="26"/>
+<connect gate="A" pin="DB6" pad="27"/>
+<connect gate="A" pin="DB7" pad="28"/>
+<connect gate="A" pin="DB8" pad="7"/>
+<connect gate="A" pin="DB9" pad="8"/>
+<connect gate="A" pin="F_CS" pad="16"/>
+<connect gate="A" pin="GND" pad="1"/>
+<connect gate="A" pin="LED_A" pad="19"/>
+<connect gate="A" pin="NC1" pad="3"/>
+<connect gate="A" pin="NC2" pad="18"/>
+<connect gate="A" pin="NC3" pad="20"/>
+<connect gate="A" pin="NC4" pad="40"/>
+<connect gate="A" pin="NC5" pad="39"/>
+<connect gate="A" pin="NC6" pad="32"/>
+<connect gate="A" pin="RD" pad="6"/>
+<connect gate="A" pin="RS" pad="4"/>
+<connect gate="A" pin="RST" pad="17"/>
+<connect gate="A" pin="SD_CLK" pad="36"/>
+<connect gate="A" pin="SD_CS" pad="38"/>
+<connect gate="A" pin="SD_DO" pad="35"/>
+<connect gate="A" pin="SD_IN" pad="37"/>
+<connect gate="A" pin="T_CLK" pad="29"/>
+<connect gate="A" pin="T_CS" pad="30"/>
+<connect gate="A" pin="T_DIN" pad="31"/>
+<connect gate="A" pin="T_DO" pad="33"/>
+<connect gate="A" pin="T_IRQ" pad="34"/>
+<connect gate="A" pin="VCC" pad="2"/>
+<connect gate="A" pin="WR" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="9341" package="LCD_TFT_9341_MIRROR">
 <connects>
 <connect gate="A" pin="CS" pad="15"/>
 <connect gate="A" pin="DB0" pad="21"/>
